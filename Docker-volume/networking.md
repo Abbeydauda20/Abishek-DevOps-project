@@ -89,3 +89,6 @@ This mode enables communication between containers across multiple Docker host m
 
 This mode allows a container to appear on the network as a physical host rather than as a container.
 
+The concept of bridge network, host network and custom bridge network have also been explained 
+The custom bridge network is used to isolate a container with much sensitive information eg database, finance, PII etc
+
