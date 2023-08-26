@@ -74,7 +74,8 @@ To attach a host network to a Docker container, you can use the --network="host"
 Here's an example of how to run a Docker container with the host network:
 
 ```
-docker run --network="host" <image_name> <command>
+docker run -d --network="host" --name <container-name> <image_name> <command>               # Host network
+docker run -d --network="secure-network" --name <container-name> <image_name> <command>     #custom bridge netwrok
 ```
 
 Keep in mind that when you use the host network, the container is less isolated from the host system, and has access to all of the host's network resources. This can be a security risk, so use the host network with caution.
